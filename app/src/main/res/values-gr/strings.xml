@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">TRVL</string>
+    <string name="nav_header_title">TRVL</string>
+    <string name="nav_header_subtitle">Travel Solutions</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_deleteAll">Delete All</string>
+
+    <!--     Menu Titles Strings-->
+
+    <string name="menu_home">Κεντρική Σελίδα</string>
+    <string name="menu_offices">Ταξιδιωτικά Γραφεία</string>
+    <string name="menu_tours">Προορισμοί</string>
+    <string name="menu_packages">Πακέτα Εκδρομών</string>
+    <string name="menu_costumers">Πελάτες</string>
+    <string name="menu_hotels">Ξενοδοχεία</string>
+    <string name="menu_aboutUs">Ποιοί Είμαστε</string>
+    <string name="menu_help">Βοήθεια</string>
+    <string name="menu_settings">Ρυθμίσεις</string>
+
+    <string name="menu_more">Περισότερα</string>
+    <string name="menu_adminoptions">Επιλογές Διαχειριστή</string>
+
+
+    <!--    Add fragment Title Strings-->
+
+    <string name="add_offices">Εισαγωγή Γραφείου</string>
+    <string name="add_tours">Εισαγωγή Προορισμού</string>
+    <string name="add_packages">Εισαγωγή Πακέτου</string>
+    <string name="add_costumers">Εισαγωγή Πελάτη</string>
+    <string name="add_hotels">Εισαγωγή Ξενοδοχείου</string>
+
+    <!--    Update fragment Title Strings-->
+
+    <string name="update_offices">Update Office</string>
+    <string name="update_tours">Update Tour</string>
+    <string name="update_packages">Update Package</string>
+    <string name="update_costumers">Update Costumer</string>
+    <string name="update_hotels">Update Hotel</string>
+    <string name="tour_maps">Google Χάρτες</string>
+    <!--    Button Text Strings-->
+
+    <string name="button_confirm">Υποβολή</string>
+    <string name="button_cancel">Άκυρο</string>
+    <string name="button_browse">Επιλογή Φωτογραφίας</string>
+    <!--    Input Hints Strings-->
+
+    <string name="input_cid">Κωδικός Πελάτη</string>
+    <string name="input_tid">Κωδικός Προορισμού</string>
+    <string name="input_pid">Κωδικός Πακέτου</string>
+    <string name="input_ofid">Κωδικός Γραφείου</string>
+    <string name="input_hid">Κωδικός Ξενοδοχείου</string>
+    <string name="input_name">Όνομα</string>
+    <string name="input_surname">Έπιθετο</string>
+    <string name="input_email">Ηλεκτ. Διεύθυνση</string>
+    <string name="input_phone">Τηλέφωνο</string>
+    <string name="input_address">Διεύθυνση</string>
+    <string name="input_duration">Διάρκεια</string>
+    <string name="input_departuredate">Ημερ. Αναχώρησης</string>
+    <string name="input_cost">Κόστος</string>
+    <string name="input_stars">Αστέρια</string>
+    <string name="input_city">Πόλη</string>
+    <string name="input_country">Χώρα</string>
+    <string name="input_Type">Τύπος Εκδρομής</string>
+
+    <string name="input_selectOffice">Επέλεξε Γραφείου</string>
+    <string name="input_selectTour">Επέλεξε Προορισμό</string>
+    <string name="input_selectHotel">Επέλεξε Ξενοδοχείο</string>
+    <string name="input_selectPackage">Επέλεξε Πακέτο</string>
+
+    <!--    RecyclerView Card Label Strings-->
+
+    <string name="card_hotel">Ξενοδοχείο : </string>
+    <string name="card_office">Γραφείο : </string>
+    <string name="card_cid">Κωδικός Πελάτη : </string>
+    <string name="card_tid">Κωδικός Προορισμού : </string>
+    <string name="card_pid">Κωδικός Πακέτου : </string>
+    <string name="card_ofid">Κωδικός Γραφείου : </string>
+    <string name="card_hid">Κωδικός Ξενοδοχείου : </string>
+    <string name="card_name">Όνομα : </string>
+    <string name="card_surname">Έπιθετο : </string>
+    <string name="card_email">Ηλεκτ. Διεύθυνση : </string>
+    <string name="card_phone">Τηλέφωνο : </string>
+    <string name="card_address">Διεύθυνση</string>
+    <string name="card_duration">Διάρκεια :  </string>
+    <string name="card_departuredate">Ημερ. Αναχώρησης : </string>
+    <string name="card_cost">Κόστος : </string>
+    <string name="card_stars">Αστέρια : </string>
+    <string name="card_city">Πόλη : </string>
+    <string name="card_country">Χώρα : </string>
+    <string name="card_Type">Τύπος Εκδρομής : </string>
+
+    <!--    Filter Title Strings-->
+
+    <string name="filter_citydesc">Πόλη : Φθίνουσα</string>
+    <string name="filter_cityasc">Πόλη : Άυξουσα</string>
+    <string name="filter_id">Κωδικός : Άυξουσα</string>
+
+    <string name="filter_costdesc">Κόστος : Φθίνουσα</string>
+    <string name="filter_costasc">Κόστος : Άυξουσα</string>
+
+    <string name="filter_namedesc">Όνομα : Α - Ω</string>
+    <string name="filter_nameasc">Όνομα : Ω - Α</string>
+
+    <!--    Settings Strings-->
+
+    <string name="settings_fillRoomlabel">Μπορείτε να Γεμίσετε την Room  με έγκυρα\n δεδομένα πατώντας το κουμπί παρακάτω</string>
+    <string name="settings_fillRoombtn">Συμπλήρωση δεδομένων στην Room</string>
+
+    <string name="settings_deleteRoomlabel">Μπορείτε να Διαγράψετε την Room\n  πατώντας το κουμπί παρακάτω</string>
+    <string name="settings_deleteRoombtn">Διαγραφή δεδομένων από την Room</string>
+
+    <string name="settings_fillfirestorelabel">Μπορείτε να συμπληρώσετε την Firestore με έγκυρα\n δεδομένα πατώντας το παρακάτω κουμπί</string>
+    <string name="settings_fillfirestorebtn">Συμπλήρωση δεδομένων στην Firestore </string>
+
+    <string name="settings_deletefirestorelabel">Μπορείτε να Διαγράψετε την Firestore \n πατώντας το παρακάτω κουμπί</string>
+    <string name="settings_deletefirestorebtn">Διαγραφή δεδομένων από την Firestore</string>
+    <string name="settingsCaution">ΠΡΟΣΟΧΗ!!! \n Οι Παραπάνω ενέργειες ειναι μονο για τους προγραμματιστές</string>
+    <!--    Home Text Strings-->
+
+    <string name="main_intro_text">Οι υπηρεσίες μας καλύπτουν όλες τις πτυχές των ταξιδιωτικών σας αναγκών διασφαλίζοντας ότι οι διακοπές σας στη Μεσόγειο θα είναι αξέχαστες . Με το TRVL είστε σίγουροι για την ποιότητα και την αξιοπιστία.</string>
+
+    <!--    Bio Strings-->
+    <string name="about_title">Βιογραφικό Προγγραματιστών</string>
+    <string name="bio_gmoi">\n\n Όνομα : Γεώργιος Μωυσίδης \n\n ΑΜ : 174881 \n\n Εξάμηνο : 10 \n\n </string>
+    <string name="bio_peris">\n\n Όνομα : Περικλής Γούσιος \n\n ΑΜ : 175073 \n\n Εξάμηνο : 10 \n\n </string>
+    <string name="bio_karezos">\n\n Όνομα : Αθανάσιος Καρέζος \n\n ΑΜ : 185193 \n\n Εξάμηνο : 8 \n\n </string>
+
+<!--    help Strings-->
+
+    <string name="help_title">Χειρονομίες</string>
+    <string name="help_click">Κάνοντας Κλικ σε ενα  RecyclerView  \n\n Item ανοίγει παράθυρο με περισσότερες πληροφορίες</string>
+    <string name="help_longClick">\n \n \n \nΜε κρατημένο Κλικ σε ενα \n a  RecyclerView Item  γινεται Επεξεργασία</string>
+
+    <string name="help_swipeL">Σύρετε προς τα αριστερά ενα RecyclerView \n\n Item για Διαγραφή</string>
+    <string name="help_swipeR">Σύρετε προς τα δεξιά ενα RecyclerView Item \n\n για ειδική ενέργεια \n\n Πχ Άνοιγμα Google Χαρτών</string>
+
+</resources>

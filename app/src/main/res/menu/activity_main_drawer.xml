@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:iconTint="@color/orange"
+        android:title="@string/menu_home" />
+
+
+    <item android:title="@string/menu_adminoptions">
+        <menu >
+            <item
+                android:id="@+id/nav_offices"
+                android:icon="@drawable/ic_baseline_store_24"
+                android:iconTint="@color/orange"
+                android:title="@string/menu_offices" />
+
+            <item
+                android:id="@+id/nav_tours"
+                android:icon="@drawable/ic_baseline_place_24"
+                android:iconTint="@color/orange"
+                android:title="@string/menu_tours" />
+
+            <item
+                android:id="@+id/nav_hotels"
+                android:icon="@drawable/ic_baseline_hotel_24"
+                android:iconTint="@color/orange"
+                android:title="@string/menu_hotels" />
+
+            <item
+                android:id="@+id/nav_packages"
+                android:icon="@drawable/ic_baseline_card_travel_24"
+                android:iconTint="@color/orange"
+                android:title="@string/menu_packages" />
+
+            <item
+                android:id="@+id/nav_costumers"
+                android:icon="@drawable/ic_baseline_group_24"
+                android:iconTint="@color/orange"
+                android:title="@string/menu_costumers" />
+        </menu>
+    </item>
+    <item android:title="@string/menu_more">
+
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_baseline_info_24"
+                android:iconTint="@color/orange"
+                android:title="@string/menu_aboutUs" />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_baseline_help_24"
+                android:iconTint="@color/orange"
+                android:title="@string/menu_help" />
+
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:iconTint="@color/orange"
+                android:title="@string/menu_settings" />
+
+        </menu>
+    </item>
+
+
+</menu>

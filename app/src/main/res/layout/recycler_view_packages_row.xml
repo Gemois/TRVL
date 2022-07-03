@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="17dp"
+    app:cardElevation="100dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:padding="8dp">
+
+
+        <ImageView
+            android:id="@+id/package_icon_row_tour"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="1dp"
+            android:src="@drawable/ic_baseline_card_travel_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/package_icon_row_office">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/package_icon_row_office"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="1dp"
+            android:src="@drawable/ic_baseline_card_travel_24"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="9dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/package_row_t_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/card_office"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_icon_row_office"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_tid_label" />
+
+        <TextView
+            android:id="@+id/package_row_t_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_row_t_name_label"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_tid" />
+
+        <TextView
+            android:id="@+id/package_row_t_city_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="2dp"
+
+            android:text="@string/card_city"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_icon_row_office"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_t_name_label" />
+
+        <TextView
+            android:id="@+id/package_row_t_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            app:layout_constraintStart_toEndOf="@+id/package_row_t_city_label"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_t_name" />
+
+        <TextView
+            android:id="@+id/package_row_duration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/card_departuredate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_icon_row_office"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_t_city_label" />
+
+        <TextView
+            android:id="@+id/package_row_departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_row_duration_label"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_t_city" />
+
+        <TextView
+            android:id="@+id/package_row_cost_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="2dp"
+            android:text="@string/card_cost"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_icon_row_office"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_duration_label" />
+
+        <TextView
+            android:id="@+id/package_row_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_row_cost_label"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_departure" />
+
+
+        <TextView
+            android:id="@+id/package_row_pid_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="2dp"
+            android:text="@string/card_pid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_icon_row_office"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/package_row_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:text=""
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_row_pid_label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/package_row_ofid_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="2dp"
+            android:text="@string/card_ofid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_icon_row_office"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_pid_label" />
+
+
+        <TextView
+            android:id="@+id/package_row_ofid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_row_ofid_label"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_id" />
+
+        <TextView
+            android:id="@+id/package_row_tid_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/card_tid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_icon_row_office"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_ofid_label" />
+
+        <TextView
+            android:id="@+id/package_row_tid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/package_row_tid_label"
+            app:layout_constraintTop_toBottomOf="@+id/package_row_ofid" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

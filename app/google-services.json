@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "242159995740",
+    "project_id": "trvlapp-db",
+    "storage_bucket": "trvlapp-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242159995740:android:7b05ad46b72539f5984f99",
+        "android_client_info": {
+          "package_name": "com.iee.trvlapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242159995740-i5q1ckk5u2qp8fh96huqjf5bgdb37jlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPobZSZnXwnltRcW8ff-mqYj2gAxJ_Njs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242159995740-i5q1ckk5u2qp8fh96huqjf5bgdb37jlt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

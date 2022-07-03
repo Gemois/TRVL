@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="17dp"
+    app:cardElevation="100dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orange"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/costumer_icon_row"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/customer_icon3"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/costumer_hotel_row"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_baseline_hotel_24"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_icon_row" />
+
+
+
+        <TextView
+            android:id="@+id/costumer_row_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/card_cid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_icon_row"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/costumer_row_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:text="id"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_row_id_label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/costumer_row_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/card_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_icon_row"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_id_label" />
+
+
+        <TextView
+            android:id="@+id/costumer_row_name"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:text="name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_row_name_label"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_id" />
+
+
+        <TextView
+            android:id="@+id/costumer_row_surname_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/card_surname"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_icon_row"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_name_label" />
+
+        <TextView
+            android:id="@+id/costumer_row_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:text="surname"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_row_surname_label"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_name" />
+
+        <TextView
+            android:id="@+id/costumer_row_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/card_phone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_icon_row"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_surname_label" />
+
+        <TextView
+            android:id="@+id/costumer_row_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:text="phone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_row_phone_label"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_surname" />
+
+
+        <TextView
+            android:id="@+id/costumer_row_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/card_email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_icon_row"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_phone_label" />
+
+
+        <TextView
+            android:id="@+id/costumer_row_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:text="email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_row_email_label"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_phone" />
+
+
+        <TextView
+            android:id="@+id/costumer_row_pid_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/card_pid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_icon_row"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_email_label" />
+
+
+        <TextView
+            android:id="@+id/costumer_row_pid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:text="pid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_row_pid_label"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_email" />
+
+        <TextView
+            android:id="@+id/costumer_row_hotel_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/card_hotel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_icon_row"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_city" />
+
+        <TextView
+            android:id="@+id/costumer_row_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:text="hotel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_row_hotel_label"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_city" />
+
+
+        <TextView
+            android:id="@+id/costumer_row_city_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/card_city"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_icon_row"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_pid_label" />
+
+        <TextView
+            android:id="@+id/costumer_row_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="1dp"
+            android:text="city"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/costumer_row_city_label"
+            app:layout_constraintTop_toBottomOf="@+id/costumer_row_pid" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

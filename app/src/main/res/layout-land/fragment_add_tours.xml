@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="horizontal"
+    tools:context=".ui.Tours.AddToursFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/Tour_city"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_location_city_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_city"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/Tour_Country"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/Tour_city"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_place_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_country"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/tour_Duration"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/Tour_Country"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_duration"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Tour_city" />
+
+            <EditText
+                android:id="@+id/tour_type"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/tour_Duration"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_format_list_numbered_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_Type"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tour_Duration" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addbrowseImageLibrary_tour"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tour_type"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="27dp"
+                android:backgroundTint="@color/orange"
+                android:drawableLeft="@drawable/ic_baseline_image_search_24"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:text="@string/button_browse"
+                android:textAllCaps="false"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/landAddTourImagePreview" />
+
+            <ImageView
+                android:id="@+id/landAddTourImagePreview"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="136dp"
+                android:src="@drawable/ic_baseline_preview_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tour_Duration"
+                app:layout_constraintTop_toBottomOf="@+id/Tour_Country" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tours_button"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addbrowseImageLibrary_tour"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="38dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/button_confirm"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tour_type" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel_update_tours_button"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tours_button"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="27dp"
+                android:backgroundTint="@color/cancelBtn"
+                android:text="@string/button_cancel"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addbrowseImageLibrary_tour" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

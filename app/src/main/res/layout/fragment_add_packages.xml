@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".ui.Packages.AddPackagesFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/package_ofid2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_officeid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_selectOffice"
+                    android:background="@color/orange"
+                    android:inputType="none"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/package_tid2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/package_ofid2"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_ptid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/orange"
+                    android:hint="@string/input_selectTour"
+                    android:inputType="none"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/package_departure"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/package_tid2"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_departuredate"
+                android:inputType="date"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/package_cost"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/package_departure"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_cost"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/package_button"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/package_cost"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/button_confirm"
+                android:textColor="@color/textInPurple"
+                android:textSize="20dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel_update_packages_button"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/package_button"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/cancelBtn"
+                android:text="@string/button_cancel"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

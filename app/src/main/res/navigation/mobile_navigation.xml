@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.iee.trvlapp.ui.Home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_offices"
+        android:name="com.iee.trvlapp.ui.Offices.OfficesFragment"
+        android:label="@string/menu_offices"
+        tools:layout="@layout/fragment_offices" >
+        <action
+            android:id="@+id/action_nav_offices_to_addOfficesFragment"
+            app:destination="@id/addOfficesFragment" />
+        <action
+            android:id="@+id/action_nav_offices_to_updateOfficesFragment"
+            app:destination="@id/updateOfficesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tours"
+        android:name="com.iee.trvlapp.ui.Tours.ToursFragment"
+        android:label="@string/menu_tours"
+        tools:layout="@layout/fragment_tours" >
+        <action
+            android:id="@+id/action_nav_tours_to_addToursFragment"
+            app:destination="@id/addToursFragment" />
+        <action
+            android:id="@+id/action_nav_tours_to_updateToursFragment"
+            app:destination="@id/updateToursFragment" />
+        <action
+            android:id="@+id/action_nav_tours_to_tourMapsFragment"
+            app:destination="@id/tourMapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_packages"
+        android:name="com.iee.trvlapp.ui.Packages.PackagesFragment"
+        android:label="@string/menu_packages"
+        tools:layout="@layout/fragment_packages" >
+        <action
+            android:id="@+id/action_nav_packages_to_addPackagesFragment"
+            app:destination="@id/addPackagesFragment" />
+        <action
+            android:id="@+id/action_nav_packages_to_updatePackagesFragment"
+            app:destination="@id/updatePackagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_costumers"
+        android:name="com.iee.trvlapp.ui.Costumers.CostumersFragment"
+        android:label="@string/menu_costumers"
+        tools:layout="@layout/fragment_costumers" >
+        <action
+            android:id="@+id/action_nav_costumers_to_addCostumersFragment"
+            app:destination="@id/addCostumersFragment" />
+        <action
+            android:id="@+id/action_nav_costumers_to_updateCostumersFragment2"
+            app:destination="@id/updateCostumersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCostumersFragment"
+        android:name="com.iee.trvlapp.ui.Costumers.AddCostumersFragment"
+        android:label="@string/add_costumers"
+        tools:layout="@layout/fragment_add_costumers" >
+        <action
+            android:id="@+id/action_addCostumersFragment_to_nav_costumers"
+            app:destination="@id/nav_costumers" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPackagesFragment"
+        android:name="com.iee.trvlapp.ui.Packages.AddPackagesFragment"
+        android:label="@string/add_packages"
+        tools:layout="@layout/fragment_add_packages" >
+        <action
+            android:id="@+id/action_addPackagesFragment_to_nav_packages"
+            app:destination="@id/nav_packages" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOfficesFragment"
+        android:name="com.iee.trvlapp.ui.Offices.AddOfficesFragment"
+        android:label="@string/add_offices"
+        tools:layout="@layout/fragment_add_offices" >
+        <action
+            android:id="@+id/action_addOfficesFragment_to_nav_offices"
+            app:destination="@id/nav_offices" />
+    </fragment>
+    <fragment
+        android:id="@+id/addToursFragment"
+        android:name="com.iee.trvlapp.ui.Tours.AddToursFragment"
+        android:label="@string/add_tours"
+        tools:layout="@layout/fragment_add_tours" >
+        <action
+            android:id="@+id/action_addToursFragment_to_nav_tours"
+            app:destination="@id/nav_tours" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateOfficesFragment"
+        android:name="com.iee.trvlapp.ui.Offices.UpdateOfficesFragment"
+        android:label="@string/update_offices"
+        tools:layout="@layout/fragment_update_offices" >
+        <action
+            android:id="@+id/action_updateOfficesFragment_to_nav_offices"
+            app:destination="@id/nav_offices" />
+        <argument
+            android:name="office_id"
+            app:argType="integer" />
+        <argument android:name="office_name"
+            app:argType="string" />
+        <argument
+            android:name="office_address"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateToursFragment"
+        android:name="com.iee.trvlapp.ui.Tours.UpdateToursFragment"
+        android:label="@string/update_tours"
+        tools:layout="@layout/fragment_update_tours" >
+        <action
+            android:id="@+id/action_updateToursFragment_to_nav_tours"
+            app:destination="@id/nav_tours" />
+        <argument
+            android:name="tour_id"
+            app:argType="integer" />
+        <argument
+            android:name="tour_city"
+            app:argType="string" />
+        <argument
+            android:name="tour_country"
+            app:argType="string" />
+        <argument
+            android:name="tour_duration"
+            app:argType="integer" />
+        <argument
+            android:name="tour_type"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePackagesFragment"
+        android:name="com.iee.trvlapp.ui.Packages.UpdatePackagesFragment"
+        android:label="@string/update_packages"
+        tools:layout="@layout/fragment_update_packages" >
+        <action
+            android:id="@+id/action_updatePackagesFragment_to_nav_packages"
+            app:destination="@id/nav_packages" />
+        <argument
+            android:name="package_id"
+            app:argType="integer" />
+        <argument
+            android:name="package_ofid"
+            app:argType="integer" />
+        <argument
+            android:name="package_tid"
+            app:argType="integer" />
+        <argument
+            android:name="package_duration"
+            app:argType="string" />
+        <argument android:name="package_cost"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateCostumersFragment"
+        android:name="com.iee.trvlapp.ui.Costumers.UpdateCostumersFragment"
+        android:label="@string/update_costumers"
+        tools:layout="@layout/fragment_update_costumers" >
+        <action
+            android:id="@+id/action_updateCostumersFragment_to_nav_costumers2"
+            app:destination="@id/nav_costumers" />
+        <argument
+            android:name="customer_id"
+            app:argType="integer" />
+        <argument
+            android:name="customer_name"
+            app:argType="string" />
+        <argument
+            android:name="surname"
+            app:argType="string" />
+        <argument
+            android:name="customer_phone"
+            app:argType="string" />
+        <argument
+            android:name="customer_email"
+            app:argType="string" />
+        <argument
+            android:name="customer_pid"
+            app:argType="integer" />
+        <argument
+            android:name="customer_hotel"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.iee.trvlapp.ui.SupportingClasses.AboutUsFragment"
+        android:label="@string/menu_aboutUs"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.iee.trvlapp.ui.SupportingClasses.Settings"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.iee.trvlapp.ui.SupportingClasses.HelpFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/nav_hotels"
+        android:name="com.iee.trvlapp.ui.Hotels.HotelsFragment"
+        android:label="@string/menu_hotels"
+        tools:layout="@layout/fragment_hotels" >
+        <action
+            android:id="@+id/action_nav_hotels_to_addHotelsFragment"
+            app:destination="@id/addHotelsFragment" />
+        <action
+            android:id="@+id/action_nav_hotels_to_updateHotelsFragment"
+            app:destination="@id/updateHotelsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addHotelsFragment"
+        android:name="com.iee.trvlapp.ui.Hotels.AddHotelsFragment"
+        android:label="@string/add_hotels"
+        tools:layout="@layout/fragment_add_hotels" >
+        <action
+            android:id="@+id/action_addHotelsFragment_to_nav_hotels"
+            app:destination="@id/nav_hotels" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateHotelsFragment"
+        android:name="com.iee.trvlapp.ui.Hotels.UpdateHotelsFragment"
+        android:label="@string/update_hotels"
+        tools:layout="@layout/fragment_update_hotels" >
+        <action
+            android:id="@+id/action_updateHotelsFragment_to_nav_hotels"
+            app:destination="@id/nav_hotels" />
+        <argument
+            android:name="hotel_id"
+            app:argType="integer" />
+        <argument
+            android:name="hotel_name"
+            app:argType="string" />
+        <argument
+            android:name="hotel_address"
+            app:argType="string" />
+        <argument
+            android:name="hotel_stars"
+            app:argType="integer" />
+        <argument
+            android:name="hotel_tid"
+            app:argType="integer" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/tourMapsFragment"
+        android:name="com.iee.trvlapp.ui.Tours.ToursMapsFragment"
+        tools:layout="@layout/fragment_maps"
+        android:label="@string/tour_maps">
+
+        <action
+            android:id="@+id/action_tourMapsFragment_to_nav_tours"
+            app:destination="@id/nav_tours" />
+        <argument
+            android:name="city_name"
+            app:argType="string" />
+    </fragment>
+
+
+
+</navigation>

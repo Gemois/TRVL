@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FF000000</color>
+    <color name="grey2">#7F7B7C</color>
+    <color name="secondaryOrange">#FF000000</color>
+    <color name="red">#FF0000</color>
+
+    <color name="purple_500">#FF000000</color>
+
+    <color name="purple_700">#7F000000</color>
+    <color name="red1">#2E0249</color>
+    <color name="blue">#F2F3F4</color>
+    <color name="orange">#BF2E0249</color>
+
+    <color name="btnPlusColor">#E6299C2D</color>
+    <color name="btnDelColor">#E6DC254A</color>
+
+    <color name="btnColor">#7F7B7C</color>
+    <color name="green">#9C2E0249</color>
+    <color name="textInPurple">#ffffff</color>
+    <color name="cancelBtn">#7F7B7C</color>
+
+    <color name="transparentDialog">#00FFFFFF</color>
+<!-- EDF4F5 | e3e3e3-->
+</resources>

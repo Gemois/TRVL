@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:backgroundTint="@color/orange">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/icon_dialog_hotel"
+            android:layout_width="240dp"
+            android:layout_height="280dp"
+            android:src="@drawable/ic_baseline_hotel_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/hotel_dialog_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_hid"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon_dialog_hotel" />
+
+        <TextView
+            android:id="@+id/hotel_dialog_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="id"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/hotel_dialog_id_label"
+            app:layout_constraintTop_toBottomOf="@+id/icon_dialog_hotel" />
+
+        <TextView
+            android:id="@+id/hotel_dialog_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_name"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_dialog_id_label" />
+
+        <TextView
+            android:id="@+id/hotel_dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="name"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/hotel_dialog_name_label"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_dialog_id" />
+
+        <TextView
+            android:id="@+id/hotel_dialog_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_address"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_dialog_name_label" />
+
+        <TextView
+            android:id="@+id/hotel_dialog_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="address"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/hotel_dialog_address_label"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_dialog_name" />
+
+        <TextView
+            android:id="@+id/hotel_dialog_stars_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_stars"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_dialog_address_label" />
+
+        <TextView
+            android:id="@+id/hotel_dialog_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="stars"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/hotel_dialog_stars_label"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_dialog_address" />
+
+        <TextView
+            android:id="@+id/hotel_dialog_tid_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_tid"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_dialog_stars_label" />
+
+        <TextView
+            android:id="@+id/hotel_dialog_tid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="id"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/hotel_dialog_tid_label"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_dialog_stars" />
+
+
+        <TextView
+            android:id="@+id/hotel_dialog_city_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_city"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_dialog_tid_label" />
+
+        <TextView
+            android:id="@+id/hotel_dialog_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="city"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/hotel_dialog_city_label"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_dialog_tid" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

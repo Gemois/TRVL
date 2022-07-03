@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/orange">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <ImageView
+
+            android:id="@+id/tour_dialog_image"
+            android:layout_width="240dp"
+            android:layout_height="280dp"
+            android:src="@drawable/ic_baseline_place_24"
+            app:circularflow_radiusInDP="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tour_dialog_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_tid"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tour_dialog_image" />
+
+
+        <TextView
+            android:id="@+id/tour_dialog_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="id"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/tour_dialog_id_label"
+            app:layout_constraintTop_toBottomOf="@+id/tour_dialog_image" />
+
+        <TextView
+            android:id="@+id/tour_dialog_city_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_city"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tour_dialog_id_label" />
+
+        <TextView
+            android:id="@+id/tour_dialog_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="City"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/tour_dialog_city_label"
+            app:layout_constraintTop_toBottomOf="@+id/tour_dialog_id" />
+
+
+        <TextView
+            android:id="@+id/tour_dialog_country_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_country"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tour_dialog_city_label" />
+
+        <TextView
+            android:id="@+id/tour_dialog_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="country"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/tour_dialog_country_label"
+            app:layout_constraintTop_toBottomOf="@+id/tour_dialog_city" />
+
+
+        <TextView
+            android:id="@+id/tour_dialog_duration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_duration"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tour_dialog_country_label" />
+
+        <TextView
+            android:id="@+id/tour_dialog_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="duration"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/tour_dialog_duration_label"
+            app:layout_constraintTop_toBottomOf="@+id/tour_dialog_country" />
+
+        <TextView
+            android:id="@+id/tour_dialog_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/card_Type"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tour_dialog_duration_label" />
+
+        <TextView
+            android:id="@+id/tour_dialog_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="type"
+            android:textColor="@color/textInPurple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toEndOf="@+id/tour_dialog_type_label"
+            app:layout_constraintTop_toBottomOf="@+id/tour_dialog_duration" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</androidx.cardview.widget.CardView>

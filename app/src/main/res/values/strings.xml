@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">TRVL</string>
+    <string name="nav_header_title">TRVL</string>
+    <string name="nav_header_subtitle">Travel Solutions</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_deleteAll">Delete All</string>
+
+    <!--     Menu Titles Strings-->
+
+    <string name="menu_home">Home</string>
+    <string name="menu_offices">Offices</string>
+    <string name="menu_tours">Tours</string>
+    <string name="menu_packages">Packages</string>
+    <string name="menu_costumers">Costumers</string>
+    <string name="menu_hotels">Hotels</string>
+    <string name="menu_aboutUs">About Us</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="menu_more">More</string>
+    <string name="menu_adminoptions">Admin options</string>
+
+    <!--    Button Text Strings-->
+
+    <string name="button_confirm">Confirm</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_browse">Select Image</string>
+
+    <!--    Input Hints Strings-->
+
+    <string name="input_cid">Costumer Id</string>
+    <string name="input_tid">Tour Id</string>
+    <string name="input_pid">Package Id</string>
+    <string name="input_ofid">Office Id</string>
+    <string name="input_hid">Hotel Id</string>
+    <string name="input_name">Name</string>
+    <string name="input_surname">Surname</string>
+    <string name="input_email">Email</string>
+    <string name="input_phone">Phone</string>
+    <string name="input_address">Address</string>
+    <string name="input_duration">Duration</string>
+    <string name="input_departuredate">Departure Date</string>
+    <string name="input_cost">Cost</string>
+    <string name="input_stars">Stars</string>
+    <string name="input_city">City</string>
+    <string name="input_country">Country</string>
+    <string name="input_Type">Type</string>
+
+    <string name="input_selectOffice">Select Office</string>
+    <string name="input_selectTour">Select Tour</string>
+    <string name="input_selectHotel">Select Hotel</string>
+    <string name="input_selectPackage">Select Package</string>
+
+    <!--    Add fragment Title Strings-->
+
+    <string name="add_offices">Add Office</string>
+    <string name="add_tours">Add Tour</string>
+    <string name="add_packages">Add Package</string>
+    <string name="add_costumers">Add Costumer</string>
+    <string name="add_hotels">Add Hotel</string>
+
+    <!--    Update fragment Title Strings-->
+
+    <string name="update_offices">Update Office</string>
+    <string name="update_tours">Update Tour</string>
+    <string name="update_packages">Update Package</string>
+    <string name="update_costumers">Update Costumer</string>
+    <string name="update_hotels">Update Hotel</string>
+    <string name="tour_maps">Google Maps</string>
+    <!--    RecyclerView Card Label Strings-->
+
+    <string name="card_hotel">Hotel : </string>
+    <string name="card_office">Office : </string>
+    <string name="card_tid">Tour Id : </string>
+    <string name="card_pid">Package Id : </string>
+    <string name="card_ofid">Office Id : </string>
+    <string name="card_cid">Costumer Id : </string>
+    <string name="card_hid">Hotel Id : </string>
+    <string name="card_name">Name : </string>
+    <string name="card_surname">Surname : </string>
+    <string name="card_email">Email : </string>
+    <string name="card_phone">Phone : </string>
+    <string name="card_address">Address : </string>
+    <string name="card_duration">Duration : </string>
+    <string name="card_departuredate">Departure Date : </string>
+    <string name="card_cost">Cost : </string>
+    <string name="card_stars">Stars : </string>
+
+    <string name="card_city">City : </string>
+    <string name="card_country">Country : </string>
+    <string name="card_Type">Type : </string>
+
+    <!--    Filter Title Strings-->
+
+    <string name="filter_citydesc">City : Descenting</string>
+    <string name="filter_cityasc">City : Ascenting</string>
+    <string name="filter_id">Id : Ascenting</string>
+
+    <string name="filter_costdesc">Cost : Descenting</string>
+    <string name="filter_costasc">Cost : Ascenting</string>
+
+    <string name="filter_namedesc">Name : A to Z</string>
+    <string name="filter_nameasc">Name : Z to A</string>
+
+    <!--    Settings Strings-->
+
+    <string name="settings_fillRoomlabel">You can FILL Room Db with valid\n data by pressing the button below</string>
+    <string name="settings_fillRoombtn">Fill Data to Room db</string>
+
+    <string name="settings_deleteRoomlabel">You can DELETE Room Db\n  by pressing the button below</string>
+    <string name="settings_deleteRoombtn">Delete Data from Room db</string>
+
+    <string name="settings_fillfirestorelabel">You can FILL Firestore Db with valid\n data by pressing the button below</string>
+    <string name="settings_fillfirestorebtn">Fill Data to Firestore db</string>
+
+    <string name="settings_deletefirestorelabel">You can DELETE Firestore Db\n  by pressing the button below</string>
+    <string name="settings_deletefirestorebtn">Delete Data from Firestore db</string>
+    <string name="settingsCaution">CAUTION!!! \n The Above actions are only for the Developers</string>
+    <!--    Home Text Strings-->
+
+    <string name="main_intro_text">Our services cover all  aspects of your travel needs ensuring that your Mediterranean holiday will be one to remember With TRVL  you are assured of quality and reliability.</string>
+
+    <!--    Bio Strings-->
+    Developers Bio
+    <string name="about_title">Developers Bio</string>
+    <string name="bio_gmoi">\n\n Name : Giorgos Moisidis \n\n AM : 174881 \n\n Semester : 10 \n\n </string>
+    <string name="bio_peris">\n\n Name : Periklis Gousios \n\n AM : 175073 \n\n Semester : 10 \n\n </string>
+    <string name="bio_karezos">\n\n Name : Thanasis Karezos \n\n AM : 185193 \n\n Semester : 8 \n\n </string>
+
+    <!--    help Strings-->
+
+    <string name="help_title">Gestures</string>
+    <string name="help_click">\n \n \n \n You can Click \n a RecyclerView Item \n to open more information dialog</string>
+    <string name="help_longClick">\n \n \n \nYou can hold Click \n a  RecyclerView Item to UPDATE </string>
+    <string name="help_swipeL">\n \n \n \nYou can Swipe \nLEFT a RecyclerView Item \n to DELETE</string>
+    <string name="help_swipeR">\n \n \n \nYou can Swipe RIGHT \n a  RecyclerView Item for Special Action \n Ex. Open Google Maps</string>
+</resources>
