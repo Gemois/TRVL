@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
     android:orientation="horizontal"
-    tools:context=".ui.Tours.AddToursFragment">
+    tools:context=".ui.tour.AddTourFragment">
 
     <ScrollView
         android:id="@+id/scroll"

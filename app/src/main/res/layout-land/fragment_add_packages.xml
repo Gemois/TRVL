@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@color/blue"
     android:orientation="vertical"
-    tools:context=".ui.Packages.AddPackagesFragment">
+    tools:context=".ui.packages.AddPackageFragment">
 
     <ScrollView
         android:id="@+id/scroll"

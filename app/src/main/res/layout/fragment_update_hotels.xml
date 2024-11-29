@@ -8,7 +8,7 @@
     android:padding="30dp"
     android:background="@drawable/base"
     android:orientation="vertical"
-    tools:context=".ui.Hotels.UpdateHotelsFragment"
+    tools:context=".ui.hotel.UpdateHotelFragment"
     android:backgroundTint="@color/blue">
 
     <ScrollView

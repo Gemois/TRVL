@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
 
-    tools:context=".ui.Costumers.CostumersFragment">
+    tools:context=".ui.customer.CustomerFragment">
 
 
 

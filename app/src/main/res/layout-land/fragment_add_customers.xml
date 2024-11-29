@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".ui.customer.AddCustomerFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/costumer_id"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_group_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_cid"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                android:visibility="invisible"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/firstNameEdit"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="11dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_name"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/lastNameEdit"
+                app:layout_constraintEnd_toStartOf="@+id/costumer_pid2"
+                app:layout_constraintStart_toStartOf="@+id/costumer_id"
+                app:layout_constraintTop_toTopOf="@+id/costumer_id" />
+
+            <EditText
+                android:id="@+id/lastNameEdit"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/firstNameEdit"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_surname"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/phoneEdit"
+                app:layout_constraintEnd_toStartOf="@+id/costumer_pid2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstNameEdit" />
+
+            <EditText
+                android:id="@+id/phoneEdit"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/lastNameEdit"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="11dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_phone"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/emailEdit"
+                app:layout_constraintEnd_toStartOf="@+id/costumer_hotel2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lastNameEdit" />
+
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="333dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/phoneEdit"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:hint="@string/input_email"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/costumer_button"
+                app:layout_constraintEnd_toStartOf="@+id/cancel_update_costumers_button"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneEdit" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/costumer_pid2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailEdit"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/costumer_hotel2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/firstNameEdit"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_costumer_pid2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_selectPackage"
+                    android:inputType="none"
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/costumer_hotel2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/costumer_pid2"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/red_hat_text_regular"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/textInPurple"
+                android:textColorHint="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/cancel_update_costumers_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/phoneEdit"
+                app:layout_constraintTop_toBottomOf="@+id/costumer_pid2">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_c_hotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/orange"
+                    android:hint="@string/input_selectHotel"
+                    android:inputType="none"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/costumer_button"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/costumer_hotel2"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/button_confirm"
+                android:textColor="@color/textInPurple"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cancel_update_costumers_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailEdit" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel_update_costumers_button"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/costumer_button"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="27dp"
+                android:backgroundTint="@color/cancelBtn"
+                android:text="@string/button_cancel"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/costumer_button"
+                app:layout_constraintTop_toBottomOf="@+id/costumer_hotel2"
+                app:layout_constraintVertical_bias="0.696" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

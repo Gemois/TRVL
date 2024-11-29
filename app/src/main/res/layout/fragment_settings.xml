@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context=".ui.SupportingClasses.Settings"
+    tools:context=".ui.more.Settings"
     android:layout_marginTop="50dp">
 
     <ScrollView

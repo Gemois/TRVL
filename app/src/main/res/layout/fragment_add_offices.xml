@@ -7,7 +7,7 @@
     android:padding="30dp"
     android:background="@color/blue"
     android:orientation="vertical"
-    tools:context=".ui.Offices.AddOfficesFragment">
+    tools:context=".ui.office.AddOfficeFragment">
 
     <ScrollView
         android:id="@+id/scroll"

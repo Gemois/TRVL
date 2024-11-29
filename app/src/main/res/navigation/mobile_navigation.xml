@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.iee.trvlapp.ui.Home.HomeFragment"
+        android:name="com.iee.trvlapp.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_offices"
-        android:name="com.iee.trvlapp.ui.Offices.OfficesFragment"
+        android:name="com.iee.trvlapp.ui.office.OfficeFragment"
         android:label="@string/menu_offices"
         tools:layout="@layout/fragment_offices" >
         <action
@@ -26,7 +26,7 @@
 
     <fragment
         android:id="@+id/nav_tours"
-        android:name="com.iee.trvlapp.ui.Tours.ToursFragment"
+        android:name="com.iee.trvlapp.ui.tour.TourFragment"
         android:label="@string/menu_tours"
         tools:layout="@layout/fragment_tours" >
         <action
@@ -41,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_packages"
-        android:name="com.iee.trvlapp.ui.Packages.PackagesFragment"
+        android:name="com.iee.trvlapp.ui.packages.PackageFragment"
         android:label="@string/menu_packages"
         tools:layout="@layout/fragment_packages" >
         <action
@@ -53,7 +53,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_costumers"
-        android:name="com.iee.trvlapp.ui.Costumers.CostumersFragment"
+        android:name="com.iee.trvlapp.ui.customer.CustomerFragment"
         android:label="@string/menu_costumers"
         tools:layout="@layout/fragment_costumers" >
         <action
@@ -65,16 +65,16 @@
     </fragment>
     <fragment
         android:id="@+id/addCostumersFragment"
-        android:name="com.iee.trvlapp.ui.Costumers.AddCostumersFragment"
+        android:name="com.iee.trvlapp.ui.customer.AddCustomerFragment"
         android:label="@string/add_costumers"
-        tools:layout="@layout/fragment_add_costumers" >
+        tools:layout="@layout/fragment_add_customers" >
         <action
             android:id="@+id/action_addCostumersFragment_to_nav_costumers"
             app:destination="@id/nav_costumers" />
     </fragment>
     <fragment
         android:id="@+id/addPackagesFragment"
-        android:name="com.iee.trvlapp.ui.Packages.AddPackagesFragment"
+        android:name="com.iee.trvlapp.ui.packages.AddPackageFragment"
         android:label="@string/add_packages"
         tools:layout="@layout/fragment_add_packages" >
         <action
@@ -83,7 +83,7 @@
     </fragment>
     <fragment
         android:id="@+id/addOfficesFragment"
-        android:name="com.iee.trvlapp.ui.Offices.AddOfficesFragment"
+        android:name="com.iee.trvlapp.ui.office.AddOfficeFragment"
         android:label="@string/add_offices"
         tools:layout="@layout/fragment_add_offices" >
         <action
@@ -92,7 +92,7 @@
     </fragment>
     <fragment
         android:id="@+id/addToursFragment"
-        android:name="com.iee.trvlapp.ui.Tours.AddToursFragment"
+        android:name="com.iee.trvlapp.ui.tour.AddTourFragment"
         android:label="@string/add_tours"
         tools:layout="@layout/fragment_add_tours" >
         <action
@@ -101,7 +101,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateOfficesFragment"
-        android:name="com.iee.trvlapp.ui.Offices.UpdateOfficesFragment"
+        android:name="com.iee.trvlapp.ui.office.UpdateOfficeFragment"
         android:label="@string/update_offices"
         tools:layout="@layout/fragment_update_offices" >
         <action
@@ -118,7 +118,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateToursFragment"
-        android:name="com.iee.trvlapp.ui.Tours.UpdateToursFragment"
+        android:name="com.iee.trvlapp.ui.tour.UpdateTourFragment"
         android:label="@string/update_tours"
         tools:layout="@layout/fragment_update_tours" >
         <action
@@ -142,7 +142,7 @@
     </fragment>
     <fragment
         android:id="@+id/updatePackagesFragment"
-        android:name="com.iee.trvlapp.ui.Packages.UpdatePackagesFragment"
+        android:name="com.iee.trvlapp.ui.packages.UpdatePackageFragment"
         android:label="@string/update_packages"
         tools:layout="@layout/fragment_update_packages" >
         <action
@@ -165,7 +165,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateCostumersFragment"
-        android:name="com.iee.trvlapp.ui.Costumers.UpdateCostumersFragment"
+        android:name="com.iee.trvlapp.ui.customer.UpdateCustomerFragment"
         android:label="@string/update_costumers"
         tools:layout="@layout/fragment_update_costumers" >
         <action
@@ -195,22 +195,22 @@
     </fragment>
     <fragment
         android:id="@+id/nav_about"
-        android:name="com.iee.trvlapp.ui.SupportingClasses.AboutUsFragment"
+        android:name="com.iee.trvlapp.ui.more.AboutUsFragment"
         android:label="@string/menu_aboutUs"
         tools:layout="@layout/fragment_about_us" />
     <fragment
         android:id="@+id/settings"
-        android:name="com.iee.trvlapp.ui.SupportingClasses.Settings"
+        android:name="com.iee.trvlapp.ui.more.Settings"
         android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/nav_help"
-        android:name="com.iee.trvlapp.ui.SupportingClasses.HelpFragment"
+        android:name="com.iee.trvlapp.ui.more.HelpFragment"
         android:label="@string/menu_help"
         tools:layout="@layout/fragment_help" />
     <fragment
         android:id="@+id/nav_hotels"
-        android:name="com.iee.trvlapp.ui.Hotels.HotelsFragment"
+        android:name="com.iee.trvlapp.ui.hotel.HotelFragment"
         android:label="@string/menu_hotels"
         tools:layout="@layout/fragment_hotels" >
         <action
@@ -222,7 +222,7 @@
     </fragment>
     <fragment
         android:id="@+id/addHotelsFragment"
-        android:name="com.iee.trvlapp.ui.Hotels.AddHotelsFragment"
+        android:name="com.iee.trvlapp.ui.hotel.AddHotelFragment"
         android:label="@string/add_hotels"
         tools:layout="@layout/fragment_add_hotels" >
         <action
@@ -231,7 +231,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateHotelsFragment"
-        android:name="com.iee.trvlapp.ui.Hotels.UpdateHotelsFragment"
+        android:name="com.iee.trvlapp.ui.hotel.UpdateHotelFragment"
         android:label="@string/update_hotels"
         tools:layout="@layout/fragment_update_hotels" >
         <action
@@ -257,7 +257,7 @@
 
     <fragment
         android:id="@+id/tourMapsFragment"
-        android:name="com.iee.trvlapp.ui.Tours.ToursMapsFragment"
+        android:name="com.iee.trvlapp.ui.tour.TourMapFragment"
         tools:layout="@layout/fragment_maps"
         android:label="@string/tour_maps">
 

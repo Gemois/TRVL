@@ -8,7 +8,7 @@
     android:backgroundTint="@color/blue"
     android:orientation="vertical"
     android:padding="30dp"
-    tools:context=".ui.Packages.UpdatePackagesFragment">
+    tools:context=".ui.packages.UpdatePackageFragment">
 
     <ScrollView
         android:id="@+id/scroll"

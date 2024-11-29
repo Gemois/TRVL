@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="@color/blue"
     android:orientation="vertical"
-    tools:context=".ui.Tours.UpdateToursFragment">
+    tools:context=".ui.tour.UpdateTourFragment">
 
     <ScrollView
         android:id="@+id/scroll"

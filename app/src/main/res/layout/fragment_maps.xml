@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Tours.ToursMapsFragment">
+    tools:context=".ui.tour.TourMapFragment">
 
     <fragment
         android:id="@+id/map"
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".ui.Tours.ToursMapsFragment" />
+        tools:context=".ui.tour.TourMapFragment" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

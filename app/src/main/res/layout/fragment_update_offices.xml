@@ -8,7 +8,7 @@
     android:padding="30dp"
     android:background="@drawable/base"
     android:orientation="vertical"
-    tools:context=".ui.Offices.UpdateOfficesFragment"
+    tools:context=".ui.office.UpdateOfficeFragment"
     android:backgroundTint="@color/blue">
 
     <ScrollView

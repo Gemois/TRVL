@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/secondaryOrange"
-    tools:context=".ui.Tours.ToursFragment">
+    tools:context=".ui.tour.TourFragment">
 
 
 

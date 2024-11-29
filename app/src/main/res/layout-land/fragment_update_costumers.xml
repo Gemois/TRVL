@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
     android:orientation="vertical"
-    tools:context=".ui.Costumers.UpdateCostumersFragment">
+    tools:context=".ui.customer.UpdateCustomerFragment">
 
     <ScrollView
         android:id="@+id/scroll"

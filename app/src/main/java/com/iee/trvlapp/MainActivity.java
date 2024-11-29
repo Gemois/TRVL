@@ -3,59 +3,30 @@ package com.iee.trvlapp;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
-import android.view.View;
 import android.view.Menu;
-import android.view.WindowManager;
-import android.widget.Toast;
-import android.widget.Toolbar;
+import android.view.View;
 
-import com.firebase.ui.firestore.FirestoreRecyclerOptions;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.navigation.NavigationView;
-
-import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
-import androidx.room.RoomDatabase;
-import androidx.sqlite.db.SupportSQLiteDatabase;
 
-import com.google.firebase.firestore.CollectionReference;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
-import com.iee.trvlapp.FirestoreEntities.Costumers;
+import com.iee.trvlapp.config.AppDatabase;
 import com.iee.trvlapp.databinding.ActivityMainBinding;
-import com.iee.trvlapp.roomEntities.AppDatabase;
-import com.iee.trvlapp.roomEntities.CityHotels;
-import com.iee.trvlapp.roomEntities.Offices;
-import com.iee.trvlapp.roomEntities.Packages;
-import com.iee.trvlapp.roomEntities.Tours;
-import com.iee.trvlapp.ui.Offices.UpdateOfficesFragment;
-import com.iee.trvlapp.ui.Tours.ToursFragment;
 
-import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -92,8 +63,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
 
 
-        //hides language change buttons when on landscape
-
+        // Hide language change buttons when the device is in landscape orientation
         int orientation = this.getResources().getConfiguration().orientation;
         if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
             binding.changeLangEn.setVisibility(View.INVISIBLE);
@@ -104,8 +74,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        //Support for Changing Language to Greek
-
+        // Set up listener for changing language to Greek
         binding.changeLangGr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -121,8 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Support for Changing Language to English
-
+        // Set up listener for changing language to English
         binding.changeLangEn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -141,8 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //notification with language picked
-
+    // This method updates the app's locale and reloads the activity to apply changes.
     public void pushNotification(String locale) {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -182,9 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-
         return true;
     }
 
